@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vamsi Saripudi - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="#" class="logo">Vamsi&nbsp;Saripudi</a>
+      <!-- Checkbox hack for mobile menu -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero container">
+      <h1>Hello, I’m <span class="name">Vamsi&nbsp;Saripudi</span></h1>
+      <p class="subtitle">CS Grad Student @ MTSU • Graduate Teaching Assistant • Java • Spring&nbsp;Boot • AWS</p>
+      <p class="intro">
+        Graduate Teaching Assistant and MS CS student at Middle Tennessee State University (GPA&nbsp;4.0). I enjoy building clean,
+        scalable services in Java/Spring&nbsp;Boot, IBM ODM, Go and tinkering with ML projects.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="button">View&nbsp;Projects</a>
+        <a href="https://resume.vamsisaripudi.com" target='_blank' class="button">View/Download&nbsp;Resume</a>
+      </div>
+    </section>
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>
+        Graduate Teaching Assistant and MS CS student at Middle Tennessee State University (GPA&nbsp;4.0). I enjoy turning complex problems
+        into simple, intuitive solutions.
+      </p>
+    </section>
+    <section id="experience" class="container section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Graduate Teaching Assistant — Department of Computer Science, MTSU</h3>
+          <span class="period">Jan&nbsp;2025 — Present · Part‑time</span>
+          <ul>
+            <li>Facilitated practical exercises on advanced OOP and core data structures (recursion, stacks, queues, linked lists, trees, sorting/searching).</li>
+            <li>Conducted hands‑on lab sessions, walkthroughs, and group discussions.</li>
+            <li>Troubleshot technical issues, graded consistently, and maintained attendance & performance records.</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h3>Web&nbsp;Master — ACM Student Chapter, P.V.P. Siddhartha Institute of Technology</h3>
+          <span class="period">Jan&nbsp;2023 — Mar&nbsp;2024 · Part‑time</span>
+          <ul>
+            <li>Managed and maintained the chapter website with real-time updates for events and announcements.</li>
+            <li>Co‑organized the national-level coding competition CODETITAN 2K23, handling planning and logistics.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Diabetes Prediction using Ensemble Techniques</h3>
+          <p>Risk assessment model using Random&nbsp;Forest, XGBoost, and CatBoost; findings published on IEEE Xplore.</p>
+          <p class="tech">Tech: Python, Scikit‑learn, Ensembles</p>
+          <p class="links"><a href="https://ieeexplore.ieee.org/document/10404311" target="_blank" rel="noopener">IEEE Xplore</a></p>
+        </div>
+        <div class="card">
+          <h3>Coupon Microservice</h3>
+          <p>Containerized Go microservice with MongoDB for coupon creation, validation, redemption, and analytics; Docker‑based deployment.</p>
+          <p class="tech">Tech: Go, MongoDB, Docker, REST</p>
+          <p class="links"><a href="https://github.com/vamsisaripudi7514/coupon-service" target="_blank" rel="noopener">Repository</a></p>
+        </div>
+        <div class="card">
+          <h3>ACM Student Chapter Website&nbsp;(Svelte)</h3>
+          <p>Dynamic chapter site with real-time updates, member directory, and event archive to improve engagement.</p>
+          <p class="tech">Tech: Svelte, Frontend</p>
+          <p class="links"><a href="https://github.com/vamsisaripudi7514/new-acm-web" target="_blank" rel="noopener">Repository</a></p>
+        </div>
+        <div class="card">
+          <h3>NLP Mini Projects</h3>
+          <p>Sentiment analysis (LinearSVC & VADER) and topic modeling of Quora questions with NMF.</p>
+          <p class="tech">Tech: Python, NLP, scikit‑learn, NMF</p>
+          <p class="links"><a href="https://github.com/vamsisaripudi7514/Natural_Language_Processing_Projects" target="_blank" rel="noopener">Repository</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="container section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>Java</span><span>Spring&nbsp;Boot</span><span>IBM ODM</span><span>C++</span><span>JavaScript</span><span>Python</span><span>Go</span>
+        <span>SQL</span><span>React.js</span><span>AWS</span><span>Docker</span>
+        <span>MongoDB</span><span>MySQL</span><span>Git</span>
+      </div>
+    </section>
+    <section id="education" class="container section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Middle Tennessee State University</h3>
+        <span class="period">Aug 2024 — Present</span>
+        <p>Master of Science in Computer Science • GPA: 4.00/4.00</p>
+        <p>Tennessee, United States</p>
+      </div>
+      <div class="education-item">
+        <h3>P.V.P. Siddhartha Institute of Technology (JNTU Kakinada)</h3>
+        <span class="period">Aug 2020 — Apr 2024</span>
+        <p>B.Tech in Computer Science and Engineering • GPA: 9.18/10.00</p>
+        <p>Andhra Pradesh, India</p>
+      </div>
+    </section>
+    <section id="achievements" class="container section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Finalist in CODE‑ASTHRA 2K23 (top 10) — 24‑hour national‑level hackathon.</li>
+        <li>Selected for ACM India Winter School on AI & ML at IIT Patna (15‑day intensive).</li>
+        <li>Top Performer in Fifth Semester (undergraduate).</li>
+        <li>Led department cultural fest coordination.</li>
+        <li>Organized “Nidhi‑Anveshan” technical festival (planning and execution).</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container section">
+      <h2>Certifications</h2>
+      <ul class="certifications-list">
+        <li>
+          <a href="https://www.credly.com/badges/ba8886d2-ed74-491f-812b-e140007779b4/linked_in_profile" target="_blank" rel="noopener">
+            AWS Certified Developer – Associate (DVA‑C02)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/1bc38b8c-3a75-468c-be0b-7d959d404f4e/public_url" target="_blank" rel="noopener">
+            AWS Certified Machine Learning – Specialty (MLS‑C01)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.credly.com/badges/b3b30215-274d-4585-ad4e-7b04c871d34c/public_url" target="_blank" rel="noopener">
+            AWS Certified Cloud Practitioner (CLF‑C02)
+          </a>
+        </li>
+        <li>
+          <a href="https://smartinterviews.in/certificate/a54698ec" target="_blank" rel="noopener">
+            Smart Coder (DSA and Problem Solving)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/learning/certificates/3534a6163f298c0b755f59545f585c4f55840806b3dd389075a0026cf7cd511d?u=36452436" target="_blank" rel="noopener">
+            Microservices Professional Certificate by Kong
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>
+        Interested in collaborating or have an opportunity? Email me at
+        <a href="mailto:vamsi7514us@gmail.com">vamsi7514us@gmail.com</a> or connect via social networks below.
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/vamsisaripudi7514" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/vamsi-saripudi-a3051b1b6/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+  <footer class="container">
+    <p>&copy; <span id="year"></span> Vamsi&nbsp;Saripudi. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,182 +3,836 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vamsi Saripudi - Portfolio</title>
+  <title>Vamsi Saripudi - Software Engineer & DevSecOps Enthusiast</title>
+  <meta name="description" content="Graduate Teaching Assistant and MS CS student at MTSU specializing in Java, Spring Boot, AWS, DevSecOps, and Machine Learning">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
   <header>
     <nav class="container">
-      <a href="#" class="logo">Vamsi&nbsp;Saripudi</a>
-      <!-- Checkbox hack for mobile menu -->
+      <a href="#" class="logo">
+        <span class="logo-first">VS</span>
+        <span class="logo-full">Vamsi Saripudi</span>
+      </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section id="hero" class="hero container">
-      <h1>Hello, I’m <span class="name">Vamsi&nbsp;Saripudi</span></h1>
-      <p class="subtitle">CS Grad Student @ MTSU • Graduate Teaching Assistant • Java • Spring&nbsp;Boot • AWS</p>
-      <p class="intro">
-        Graduate Teaching Assistant and MS CS student at Middle Tennessee State University (GPA&nbsp;4.0). I enjoy building clean,
-        scalable services in Java/Spring&nbsp;Boot, IBM ODM, Go and tinkering with ML projects.
-      </p>
-      <div class="hero-buttons">
-        <a href="#projects" class="button">View&nbsp;Projects</a>
-        <a href="https://resume.vamsisaripudi.com" target='_blank' class="button">View/Download&nbsp;Resume</a>
-      </div>
-    </section>
-    <section id="about" class="container section">
-      <h2>About Me</h2>
-      <p>
-        Graduate Teaching Assistant and MS CS student at Middle Tennessee State University (GPA&nbsp;4.0). I enjoy turning complex problems
-        into simple, intuitive solutions.
-      </p>
-    </section>
-    <section id="experience" class="container section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Graduate Teaching Assistant — Department of Computer Science, MTSU</h3>
-          <span class="period">Jan&nbsp;2025 — Present · Part‑time</span>
-          <ul>
-            <li>Facilitated practical exercises on advanced OOP and core data structures (recursion, stacks, queues, linked lists, trees, sorting/searching).</li>
-            <li>Conducted hands‑on lab sessions, walkthroughs, and group discussions.</li>
-            <li>Troubleshot technical issues, graded consistently, and maintained attendance & performance records.</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h3>Web&nbsp;Master — ACM Student Chapter, P.V.P. Siddhartha Institute of Technology</h3>
-          <span class="period">Jan&nbsp;2023 — Mar&nbsp;2024 · Part‑time</span>
-          <ul>
-            <li>Managed and maintained the chapter website with real-time updates for events and announcements.</li>
-            <li>Co‑organized the national-level coding competition CODETITAN 2K23, handling planning and logistics.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="container section">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Diabetes Prediction using Ensemble Techniques</h3>
-          <p>Risk assessment model using Random&nbsp;Forest, XGBoost, and CatBoost; findings published on IEEE Xplore.</p>
-          <p class="tech">Tech: Python, Scikit‑learn, Ensembles</p>
-          <p class="links"><a href="https://ieeexplore.ieee.org/document/10404311" target="_blank" rel="noopener">IEEE Xplore</a></p>
-        </div>
-        <div class="card">
-          <h3>Coupon Microservice</h3>
-          <p>Containerized Go microservice with MongoDB for coupon creation, validation, redemption, and analytics; Docker‑based deployment.</p>
-          <p class="tech">Tech: Go, MongoDB, Docker, REST</p>
-          <p class="links"><a href="https://github.com/vamsisaripudi7514/coupon-service" target="_blank" rel="noopener">Repository</a></p>
-        </div>
-        <div class="card">
-          <h3>ACM Student Chapter Website&nbsp;(Svelte)</h3>
-          <p>Dynamic chapter site with real-time updates, member directory, and event archive to improve engagement.</p>
-          <p class="tech">Tech: Svelte, Frontend</p>
-          <p class="links"><a href="https://github.com/vamsisaripudi7514/new-acm-web" target="_blank" rel="noopener">Repository</a></p>
-        </div>
-        <div class="card">
-          <h3>NLP Mini Projects</h3>
-          <p>Sentiment analysis (LinearSVC & VADER) and topic modeling of Quora questions with NMF.</p>
-          <p class="tech">Tech: Python, NLP, scikit‑learn, NMF</p>
-          <p class="links"><a href="https://github.com/vamsisaripudi7514/Natural_Language_Processing_Projects" target="_blank" rel="noopener">Repository</a></p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg class="badge-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8" cy="8" r="3" fill="currentColor"/>
+            </svg>
+            <span>Available for Opportunities</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Vamsi Saripudi</span>
+          </h1>
+          <p class="hero-subtitle">Software Engineer & DevSecOps Enthusiast</p>
+          <p class="hero-description">
+            Graduate Teaching Assistant and MS CS student at Middle Tennessee State University (GPA 4.0/4.0). 
+            Specializing in building scalable backend systems with <strong>Java, Spring Boot, AWS</strong>, and exploring the frontiers of <strong>DevSecOps</strong>. 
+            Published researcher on IEEE Xplore with multiple AWS certifications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 3L8 13M8 13L13 8M8 13L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://resume.vamsisaripudi.com" target="_blank" class="btn btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 12L4 13C4 13.5523 4.44772 14 5 14L11 14C11.5523 14 12 13.5523 12 13L12 12M8 2L8 10M8 10L10.5 7.5M8 10L5.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">4.0</div>
+              <div class="stat-label">GPA</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">AWS Certs</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">1</div>
+              <div class="stat-label">IEEE Paper</div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="hero-bg"></div>
     </section>
-    
-    <section id="skills" class="container section">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <span>Java</span><span>Spring&nbsp;Boot</span><span>IBM ODM</span><span>C++</span><span>JavaScript</span><span>Python</span><span>Go</span>
-        <span>SQL</span><span>React.js</span><span>AWS</span><span>Docker</span>
-        <span>MongoDB</span><span>MySQL</span><span>Git</span>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-lead">
+              I'm a software engineer and teaching assistant pursuing my Master's in Computer Science 
+              at Middle Tennessee State University maintaing a 4.0 GPA.
+            </p>
+            <p>
+              My journey in tech combines hands-on development experience with academic excellence. I specialize 
+              in building robust backend systems using <strong>Java and Spring Boot</strong>, architecting cloud 
+              solutions on <strong>AWS</strong>, and exploring machine learning applications. My work has been 
+              recognized with a publication on IEEE Xplore for diabetes prediction using ensemble ML techniques.
+            </p>
+            <p>
+              As a Graduate Teaching Assistant, I help students master object-oriented programming and 
+              data structures, translating complex concepts into actionable learning experiences. I believe in 
+              writing clean, maintainable code and continuously expanding my technical horizons.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                </svg>
+                <span>IEEE Published Researcher</span>
+              </div>
+              <div class="highlight-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 7H4C2.9 7 2 7.9 2 9V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V9C22 7.9 21.1 7 20 7ZM20 18H4V9H20V18ZM11 15H13V17H11V15ZM15 15H17V17H15V15ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM15 11H17V13H15V11ZM7 11H9V13H7V11Z" fill="currentColor"/>
+                </svg>
+                <span>3 AWS Certifications</span>
+              </div>
+              <!-- <div class="highlight-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="currentColor"/>
+                  <path d="M7 10H9V17H7V10ZM11 7H13V17H11V7ZM15 13H17V17H15V13Z" fill="currentColor"/>
+                </svg>
+                <span>Code-Asthra 2K23 Finalist (Top 10)</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="education" class="container section">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Middle Tennessee State University</h3>
-        <span class="period">Aug 2024 — Present</span>
-        <p>Master of Science in Computer Science • GPA: 4.00/4.00</p>
-        <p>Tennessee, United States</p>
-      </div>
-      <div class="education-item">
-        <h3>P.V.P. Siddhartha Institute of Technology (JNTU Kakinada)</h3>
-        <span class="period">Aug 2020 — Apr 2024</span>
-        <p>B.Tech in Computer Science and Engineering • GPA: 9.18/10.00</p>
-        <p>Andhra Pradesh, India</p>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Journey</span>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2025 — Present</div>
+              <h3 class="timeline-title">Graduate Teaching Assistant</h3>
+              <div class="timeline-company">Department of Computer Science, Middle Tennessee State University</div>
+              <ul class="timeline-list">
+                <li>Lead practical exercises on advanced OOP concepts and core data structures including recursion, stacks, queues, linked lists, trees, and sorting/searching algorithms</li>
+                <li>Conduct hands-on lab sessions, facilitate code walkthroughs, and moderate group discussions to enhance student comprehension</li>
+                <li>Provide one-on-one technical support, maintain grading consistency, and track student attendance and performance metrics</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>Data Structures</span>
+                <span>Teaching</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2023 — Mar 2024</div>
+              <h3 class="timeline-title">Web Master</h3>
+              <div class="timeline-company">ACM Student Chapter, P.V.P. Siddhartha Institute of Technology</div>
+              <ul class="timeline-list">
+                <li>Managed and maintained the official chapter website, implementing real-time updates for events and announcements to improve member engagement</li>
+                <li>Co-organized CODETITAN 2K23, a national-level competitive programming event, overseeing end-to-end planning and technical logistics</li>
+                <li>Collaborated with chapter leadership to streamline digital communication and enhance the online presence of the organization</li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Web Development</span>
+                <span>Event Management</span>
+                <span>Leadership</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section id="achievements" class="container section">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Finalist in CODE‑ASTHRA 2K23 (top 10) — 24‑hour national‑level hackathon.</li>
-        <li>Selected for ACM India Winter School on AI & ML at IIT Patna (15‑day intensive).</li>
-        <li>Top Performer in Fifth Semester (undergraduate).</li>
-        <li>Led department cultural fest coordination.</li>
-        <li>Organized “Nidhi‑Anveshan” technical festival (planning and execution).</li>
-      </ul>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I've Built</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 11H7V13H9V11ZM13 11H11V13H13V11ZM17 11H15V13H17V11ZM19 4H18V2H16V4H8V2H6V4H5C3.89 4 3 4.9 3 6V20C3 21.1 3.89 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM19 20H5V9H19V20Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="project-badge">IEEE Published</span>
+            </div>
+            <h3 class="project-title">Diabetes Prediction using Ensemble Techniques</h3>
+            <p class="project-description">
+              Developed a comprehensive diabetes risk assessment model using advanced ensemble machine learning techniques. 
+              Implemented Random Forest, XGBoost, and CatBoost classifiers with hyperparameter optimization, achieving 
+              significant accuracy improvements. Research findings published on IEEE Xplore.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>XGBoost</span>
+              <span>CatBoost</span>
+              <span>Machine Learning</span>
+              <span>Research</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10404311" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M13 13H3V3H8V1H3C1.89 1 1 1.89 1 3V13C1 14.11 1.89 15 3 15H13C14.11 15 15 14.11 15 13V8H13V13ZM10 1V3H12.59L5.76 9.83L7.17 11.24L14 4.41V7H16V1H10Z" fill="currentColor"/>
+                </svg>
+                <span>View on IEEE Xplore</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card featured">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 19H5V8H19V19Z" fill="currentColor"/>
+                  <path d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="project-badge">Startup Contribution</span>
+            </div>
+            <h3 class="project-title">Multi-Platform Social Media Automation for Hart Computing</h3>
+            <p class="project-description">
+              Architected and deployed serverless automation system for Hart Computing startup to advertise their bill-tracking 
+              product across 5 social platforms (X/Twitter, BlueSky, Reddit, Threads, Instagram). Built HTTP-triggered Google 
+              Cloud Functions (2nd gen) in Python that fetch bill data from GCS, generate platform-optimized content with 
+              character limits, and post via platform APIs (Tweepy, atproto, PRAW, Threads Graph API, Instagram Content Publishing). 
+              Implemented Instagram image generation with Pillow, container status monitoring, and robust error handling with 
+              structured logging. Secured credentials via Secret Manager and deployed with proper IAM permissions.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Google Cloud Functions</span>
+              <span>GCS</span>
+              <span>Secret Manager</span>
+              <span>Tweepy</span>
+              <span>Instagram API</span>
+              <span>Pillow</span>
+              <span>Serverless</span>
+            </div>
+            <div class="project-links">
+              <a href="./GeneralizedDiagramForSE_Automated_Posting.drawio.png" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 2C4.69 2 2 4.69 2 8C2 11.31 4.69 14 8 14C11.31 14 14 11.31 14 8C14 4.69 11.31 2 8 2ZM8 12C5.79 12 4 10.21 4 8C4 5.79 5.79 4 8 4C10.21 4 12 5.79 12 8C12 10.21 10.21 12 8 12Z" fill="currentColor"/>
+                  <path d="M8 6C6.9 6 6 6.9 6 8C6 9.1 6.9 10 8 10C9.1 10 10 9.1 10 8C10 6.9 9.1 6 8 6Z" fill="currentColor"/>
+                </svg>
+                <span>View Architecture Diagram</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 6H12L10 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6ZM20 18H4V8H20V18Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">Coupon Microservice</h3>
+            <p class="project-description">
+              Built a production-ready microservice in Go for coupon lifecycle management. Features include coupon creation, 
+              validation, redemption tracking, and real-time analytics. Fully containerized with Docker for seamless deployment 
+              and scalability.
+            </p>
+            <div class="project-tech">
+              <span>Go</span>
+              <span>MongoDB</span>
+              <span>Docker</span>
+              <span>REST API</span>
+              <span>Microservices</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/coupon-service" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">ACM Student Chapter Website</h3>
+            <p class="project-description">
+              Redesigned and developed the official website for the ACM Student Chapter using Svelte. Features include 
+              a dynamic event calendar, member directory, blog system, and an archive of past activities to boost community 
+              engagement.
+            </p>
+            <div class="project-tech">
+              <span>Svelte</span>
+              <span>JavaScript</span>
+              <span>Web Development</span>
+              <span>UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/new-acm-web" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                  <path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">NLP Mini Projects</h3>
+            <p class="project-description">
+              Collection of natural language processing projects including sentiment analysis using LinearSVC and VADER, 
+              and topic modeling of Quora questions using Non-negative Matrix Factorization (NMF) to extract latent themes.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Scikit-learn</span>
+              <span>VADER</span>
+              <span>Topic Modeling</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/Natural_Language_Processing_Projects" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3L2 12H5V20H11V14H13V20H19V12H22L12 3ZM12 7.7L17 12.5V18H15V12H9V18H7V12.5L12 7.7Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">Restaurant Management System</h3>
+            <p class="project-description">
+              Full-stack web application showcasing end-to-end development from backend APIs to interactive frontend. 
+              Built with C# backend (ASP.NET) exposing web endpoints for restaurant operations, and JavaScript/HTML/CSS 
+              frontend delivering a responsive, styled UI. Demonstrates complete web development lifecycle including 
+              API design, client-server architecture, and modern web technologies.
+            </p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>ASP.NET</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>REST APIs</span>
+              <span>Full-Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/CSCI_5410_Final_Project" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">PII Parallel Scanner and Redactor</h3>
+            <p class="project-description">
+              Pure Java application emphasizing core object-oriented design and fundamental algorithms. Developed to 
+              showcase proficiency in Java, featuring clean OOP principles, problem-solving with standard Java libraries, 
+              and application-layer concepts including file I/O and data processing. Demonstrates mastery of Java 
+              architecture and design patterns without additional frameworks.
+            </p>
+            <div class="project-tech">
+              <span>Java</span>
+              <span>OOP Design</span>
+              <span>Algorithms</span>
+              <span>File I/O</span>
+              <span>Core Java</span>
+              <span>SpringBoot</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/CSCI_6330_Final_Project" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z" fill="currentColor"/>
+                  <path d="M18 8H20V11H23V13H20V16H18V13H15V11H18V8Z" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">Hierarchical Role-Based Access Control System</h3>
+            <p class="project-description">
+              A full-stack application demonstrating versatile development skills across technology stacks. 
+              Combines .NET C# backend for core server-side logic with JavaScript-powered frontend featuring responsive 
+              HTML/CSS interface. Implements hierarchical role-based access control (RBAC) to manage user permissions effectively
+            </p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>ReactJs</span>
+              <span>Multi-Language</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vamsisaripudi7514/CSCI_6560_PROJECT" target="_blank" class="project-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg>
+                <span>View Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z" fill="currentColor"/>
+                  <circle cx="12" cy="6" r="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="project-title">Renewable Energy Sources Education Platform</h3>
+            <p class="project-description">
+              Static website built from scratch as a community service initiative to raise awareness about renewable energy. 
+              Hosted on GitHub Pages, this project demonstrates ability to design accessible, public-facing content with 
+              clean layout and responsive styling. Focuses on presenting informational content about solar, wind, and other 
+              renewable sources through effective visual design and user-friendly navigation.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+              <span>Responsive Design</span>
+            </div>
+            <div class="project-links">
+              <a href="https://res.vamsisaripudi.com/" target="_blank" class="project-link">
+                <!-- <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" fill="currentColor"/>
+                </svg> -->
+                <span>View Website</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Technical Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+        </div>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2L2 7L10 12L18 7L10 2Z" fill="currentColor"/>
+                <path d="M2 12L10 17L18 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Languages
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Go</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M7 7H13M7 10H13M7 13H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Frameworks & Libraries
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">Scikit-learn</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 5H17M3 10H17M3 15H17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="7" cy="5" r="1.5" fill="currentColor"/>
+                <circle cx="7" cy="10" r="1.5" fill="currentColor"/>
+                <circle cx="7" cy="15" r="1.5" fill="currentColor"/>
+              </svg>
+              Databases
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Cloud & DevOps
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS (EC2, S3, Lambda, IAM)</span>
+              <span class="skill-tag">GCP (Compute Engine, Cloud Storage, Cloud Functions, IAM)</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2L13 8L19 9L14.5 13.5L15.5 19.5L10 16.5L4.5 19.5L5.5 13.5L1 9L7 8L10 2Z" fill="currentColor"/>
+              </svg>
+              Specialized
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">IBM ODM</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Microservices</span>
+              <span class="skill-tag">Data Structures & Algorithms</span>
+              <span class="skill-tag">N8N</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="container section">
-      <h2>Certifications</h2>
-      <ul class="certifications-list">
-        <li>
-          <a href="https://www.credly.com/badges/ba8886d2-ed74-491f-812b-e140007779b4/linked_in_profile" target="_blank" rel="noopener">
-            AWS Certified Developer – Associate (DVA‑C02)
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="certifications-grid">
+          <a href="https://www.credly.com/badges/ba8886d2-ed74-491f-812b-e140007779b4/linked_in_profile" target="_blank" class="cert-card">
+            <div class="cert-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#FF9900"/>
+                <path d="M16 8L18 14H24L19 18L21 24L16 20L11 24L13 18L8 14H14L16 8Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AWS Certified Developer – Associate</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+              <p class="cert-code">DVA-C02</p>
+            </div>
+            <svg class="cert-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </li>
-        <li>
-          <a href="https://www.credly.com/badges/1bc38b8c-3a75-468c-be0b-7d959d404f4e/public_url" target="_blank" rel="noopener">
-            AWS Certified Machine Learning – Specialty (MLS‑C01)
+          <a href="https://www.credly.com/badges/1bc38b8c-3a75-468c-be0b-7d959d404f4e/public_url" target="_blank" class="cert-card featured-cert">
+            <div class="cert-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#FF9900"/>
+                <path d="M16 6C11 6 7 10 7 15C7 20 11 24 16 24C21 24 25 20 25 15C25 10 21 6 16 6ZM16 22C12.1 22 9 18.9 9 15C9 11.1 12.1 8 16 8C19.9 8 23 11.1 23 15C23 18.9 19.9 22 16 22Z" fill="white"/>
+                <circle cx="16" cy="15" r="4" fill="white"/>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AWS Certified AI Practitioner</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+              <p class="cert-code">AIF-C01</p>
+            </div>
+            <svg class="cert-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </li>
-        <li>
-          <a href="https://www.credly.com/badges/b3b30215-274d-4585-ad4e-7b04c871d34c/public_url" target="_blank" rel="noopener">
-            AWS Certified Cloud Practitioner (CLF‑C02)
+          <a href="https://www.credly.com/badges/b3b30215-274d-4585-ad4e-7b04c871d34c/public_url" target="_blank" class="cert-card">
+            <div class="cert-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#FF9900"/>
+                <path d="M16 10L14 16H10L15 19L13 25L16 22L19 25L17 19L22 16H18L16 10Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+              <p class="cert-code">CLF-C02</p>
+            </div>
+            <svg class="cert-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </li>
-        <li>
-          <a href="https://smartinterviews.in/certificate/a54698ec" target="_blank" rel="noopener">
-            Smart Coder (DSA and Problem Solving)
+          <a href="https://smartinterviews.in/certificate/a54698ec" target="_blank" class="cert-card">
+            <div class="cert-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#4A90E2"/>
+                <path d="M10 10H22V12H10V10ZM10 14H22V16H10V14ZM10 18H18V20H10V18Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Smart Coder</h3>
+              <p class="cert-issuer">Smart Interviews</p>
+              <p class="cert-code">DSA & Problem Solving</p>
+            </div>
+            <svg class="cert-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/learning/certificates/3534a6163f298c0b755f59545f585c4f55840806b3dd389075a0026cf7cd511d?u=36452436" target="_blank" rel="noopener">
-            Microservices Professional Certificate by Kong
+          <a href="https://www.linkedin.com/learning/certificates/3534a6163f298c0b755f59545f585c4f55840806b3dd389075a0026cf7cd511d?u=36452436" target="_blank" class="cert-card">
+            <div class="cert-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#0A66C2"/>
+                <path d="M10 13H13V22H10V13ZM11.5 8C12.6 8 13.5 8.9 13.5 10C13.5 11.1 12.6 12 11.5 12C10.4 12 9.5 11.1 9.5 10C9.5 8.9 10.4 8 11.5 8ZM16 13H19V14.5C19 14.5 19.8 13 21.5 13C23.5 13 24 14.3 24 16.5V22H21V17C21 15.5 20.5 15 19.5 15C18.5 15 18 15.8 18 17V22H16V13Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Microservices Professional Certificate</h3>
+              <p class="cert-issuer">Kong (LinkedIn Learning)</p>
+            </div>
+            <svg class="cert-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5 10H15M15 10L10 5M15 10L10 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>
-        Interested in collaborating or have an opportunity? Email me at
-        <a href="mailto:vamsi7514us@gmail.com">vamsi7514us@gmail.com</a> or connect via social networks below.
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/vamsisaripudi7514" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/vamsi-saripudi-a3051b1b6/" target="_blank" rel="noopener">LinkedIn</a>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-grid">
+          <div class="education-card current">
+            <div class="education-header">
+              <div class="education-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="currentColor"/>
+                  <path d="M4 18L16 24L28 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4 14L16 20L28 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="education-badge">Current</span>
+            </div>
+            <h3 class="education-degree">Master of Science in Computer Science</h3>
+            <div class="education-school">Middle Tennessee State University</div>
+            <div class="education-details">
+              <span class="education-date">Aug 2024 — Present</span>
+              <span class="education-location">Tennessee, United States</span>
+            </div>
+            <div class="education-gpa">
+              <span class="gpa-label">GPA:</span>
+              <span class="gpa-value">4.00 / 4.00</span>
+            </div>
+            <ul class="education-highlights">
+              <li>Graduate Teaching Assistant for Data Structures & Algorithms</li>
+              <li>Maintaining perfect GPA while balancing TA responsibilities</li>
+              <li>Focusing on Distributed Systems and Cloud</li>
+            </ul>
+          </div>
+          <div class="education-card">
+            <div class="education-header">
+              <div class="education-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path d="M16 4L4 10L16 16L28 10L16 4Z" fill="currentColor"/>
+                  <path d="M4 18L16 24L28 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="education-degree">Bachelor of Technology in Computer Science and Engineering</h3>
+            <div class="education-school">P.V.P. Siddhartha Institute of Technology (JNTU Kakinada)</div>
+            <div class="education-details">
+              <span class="education-date">Aug 2020 — Apr 2024</span>
+              <span class="education-location">Andhra Pradesh, India</span>
+            </div>
+            <div class="education-gpa">
+              <span class="gpa-label">GPA:</span>
+              <span class="gpa-value">9.18 / 10.00</span>
+            </div>
+            <ul class="education-highlights">
+              <li>Web Master for ACM Student Chapter (2023-2024)</li>
+              <li>Published IEEE research paper on ML-based diabetes prediction</li>
+              <li>Top Performer in Fifth Semester</li>
+              <li>Code-Asthra 2K23 Hackathon Finalist (Top 10)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-description">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+            Whether you have a question or just want to say hi, feel free to reach out!
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-methods">
+            <a href="mailto:vamsi7514us@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8L12 13L20 8V18ZM12 11L4 6H20L12 11Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>Email</h3>
+                <p>vamsi7514us@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://github.com/vamsisaripudi7514" target="_blank" class="contact-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12C0 17.31 3.435 21.795 8.205 23.385C8.805 23.49 9.03 23.13 9.03 22.815C9.03 22.53 9.015 21.585 9.015 20.58C6 21.135 5.22 19.845 4.98 19.17C4.845 18.825 4.26 17.76 3.75 17.475C3.33 17.25 2.73 16.695 3.735 16.68C4.68 16.665 5.355 17.55 5.58 17.91C6.66 19.725 8.385 19.215 9.075 18.9C9.18 18.12 9.495 17.595 9.84 17.295C7.17 16.995 4.38 15.96 4.38 11.37C4.38 10.065 4.845 8.985 5.61 8.145C5.49 7.845 5.07 6.615 5.73 4.965C5.73 4.965 6.735 4.65 9.03 6.195C9.99 5.925 11.01 5.79 12.03 5.79C13.05 5.79 14.07 5.925 15.03 6.195C17.325 4.635 18.33 4.965 18.33 4.965C18.99 6.615 18.57 7.845 18.45 8.145C19.215 8.985 19.68 10.05 19.68 11.37C19.68 15.975 16.875 16.995 14.205 17.295C14.64 17.67 15.015 18.39 15.015 19.515C15.015 21.12 15 22.41 15 22.815C15 23.13 15.225 23.505 15.825 23.385C20.565 21.795 24 17.295 24 12C24 5.37 18.63 0 12 0Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>@vamsisaripudi7514</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/vamsi-saripudi-a3051b1b6/" target="_blank" class="contact-card">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p>Vamsi Saripudi</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="container">
-    <p>&copy; <span id="year"></span> Vamsi&nbsp;Saripudi. All rights reserved.</p>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">
+          &copy; <span id="year"></span> Vamsi Saripudi. Designed & Built with passion.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/vamsisaripudi7514" target="_blank" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0C4.475 0 0 4.475 0 10C0 14.425 2.8625 18.1625 6.8375 19.4875C7.3375 19.575 7.525 19.275 7.525 19.0125C7.525 18.775 7.5125 17.9875 7.5125 17.15C5 17.6125 4.35 16.5375 4.15 15.975C4.0375 15.6875 3.55 14.8 3.125 14.5625C2.775 14.375 2.275 13.9125 3.1125 13.9C3.9 13.8875 4.4625 14.625 4.65 14.925C5.55 16.4375 6.9875 16.0125 7.5625 15.75C7.65 15.1 7.9125 14.6625 8.2 14.4125C5.975 14.1625 3.65 13.3 3.65 9.475C3.65 8.3875 4.0375 7.4875 4.675 6.7875C4.575 6.5375 4.225 5.5125 4.775 4.1375C4.775 4.1375 5.6125 3.875 7.525 5.1625C8.325 4.9375 9.175 4.825 10.025 4.825C10.875 4.825 11.725 4.9375 12.525 5.1625C14.4375 3.8625 15.275 4.1375 15.275 4.1375C15.825 5.5125 15.475 6.5375 15.375 6.7875C16.0125 7.4875 16.4 8.375 16.4 9.475C16.4 13.3125 14.0625 14.1625 11.8375 14.4125C12.2 14.725 12.5125 15.325 12.5125 16.2625C12.5125 17.6 12.5 18.675 12.5 19.0125C12.5 19.275 12.6875 19.5875 13.1875 19.4875C17.1375 18.1625 20 14.4125 20 10C20 4.475 15.525 0 10 0Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/vamsi-saripudi-a3051b1b6/" target="_blank" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17 1H3C1.895 1 1 1.895 1 3V17C1 18.105 1.895 19 3 19H17C18.105 19 19 18.105 19 17V3C19 1.895 18.105 1 17 1ZM6.477 16H3.817V7.441H6.477V16ZM5.145 6.291C4.276 6.291 3.571 5.578 3.571 4.718C3.571 3.858 4.276 3.145 5.145 3.145C6.006 3.145 6.711 3.858 6.711 4.718C6.711 5.578 6.006 6.291 5.145 6.291ZM16.189 16H13.529V11.828C13.529 10.787 13.509 9.451 12.084 9.451C10.637 9.451 10.415 10.581 10.415 11.753V16H7.755V7.441H10.305V8.672H10.341C10.688 8.017 11.547 7.324 12.804 7.324C15.501 7.324 16.189 9.118 16.189 11.445V16Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="mailto:vamsi7514us@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M18 4H2C0.9 4 0.00999999 4.9 0.00999999 6L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V6C20 4.9 19.1 4 18 4ZM18 14H2V8L10 11.5L18 8V14ZM10 9.5L2 6H18L10 9.5Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
